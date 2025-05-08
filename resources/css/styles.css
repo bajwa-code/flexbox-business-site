@@ -16,24 +16,27 @@
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    background-color: #f8f9fa;
 }
 
 h2 {
     font-family: 'Lato', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 /* Header */
 
 header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
-    background-color: #000;
+    background-color: #1F2937;
+    color: #f9fafb;
+    /* background: linear-gradient(90deg, #1e1e2f, #2a2a3d); */
+    z-index: 100;
 }
 header .logo {
     margin-bottom: 1rem;
@@ -53,10 +56,9 @@ header .logo a {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: #ffffff;
-
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    color: #f9fafb;
 }
 
 @media screen and (max-width: 425px) {
@@ -77,7 +79,7 @@ header .navbar li {
 }
 
 header .navbar li a {
-    color: #ffffff;
+    color: #f9fafb;
 }
 
 header .navbar li a:hover {
@@ -85,24 +87,28 @@ header .navbar li a:hover {
 }
 
 /* Banner */
-#mission {
+#hero {
     height: 540px;
     background: url('../images/banner.jpg') no-repeat;
     background-size: cover;
-    color: #ffffff;
+    color: #111827;
     display: flex;
     align-items: center;
 }
 
-.mission-content {
+.hero-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #000000;
+    background-color: #f9fafb;
     padding: 2rem 0;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+#hero p {
+    font-size: 1.2rem;
 }
 
 
@@ -110,6 +116,7 @@ header .navbar li a:hover {
 #products {
     text-align: center;
     margin-top: 2.5rem;
+    color: #111827;
 }
 
 #products h2 {
@@ -143,11 +150,12 @@ figure h3{
 /* Team section */
 #team {
     margin-top: 4rem;
-    background-color: #ffffff;
+    padding: 3rem 0 5rem 0;
+    background-color: #f9fafb;
+    color: #4B5563;
 }
 #team h2{
-    text-align: center;
-    padding: 2rem;
+    margin-bottom: 3rem;
 }
 
 #team .team-members {
@@ -179,7 +187,7 @@ figure h3{
 
 .team-member-info p {
     font-size: 1.1rem;
-    color: #555;
+    /* color: #555; */
 }
 
 @media screen and (max-width: 650px) {
@@ -200,12 +208,51 @@ figure h3{
     
 }
 
+/* Contact section */
+
+#contact {
+    background-color: #ffffff;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+#contact p {
+    font-size: 1rem;
+    color: #4B5563;
+    margin: 0.5rem 0;
+}
+
+.contact-details {
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.75rem 0;
+    color: #1e1e2f;
+}
+
+
 /* footer section */
 
 footer {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #1F2937;
+    color: #f9fafb;
     padding: 2rem 0;
     text-align: center;
-    margin-top: 4rem;
 }
